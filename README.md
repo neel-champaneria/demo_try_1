@@ -11,8 +11,14 @@ NODE_ENV = "development"
 PORT = 5000
 DEV_LOG_LEVEL = "debug"
 PROD_LOG_LEVEL = "info"
+DB_NAME = ""
+DB_USER = ""
+DB_PASS = ""
+DB_HOST = "localhost"
+DB_PORT =
 ```
 
+Add Database information according to your system.
 You can define more environment variable like shown above to use in code.
 
 ## Backend will run on port 5000 and frontend will run on port 3000.
@@ -29,6 +35,11 @@ node_env: process.env.NODE_ENV,
 port: process.env.PORT,
 dev_log_level: process.env.DEV_LOG_LEVEL,
 prod_log_level: process.env.PROD_LOG_LEVEL,
+db_name: process.env.DB_NAME,
+db_user: process.env.DB_USER,
+db_pass: process.env.DB_PASS,
+db_host: process.env.DB_HOST,
+db_port: process.env.DB_PORT
 };
 ```
 
